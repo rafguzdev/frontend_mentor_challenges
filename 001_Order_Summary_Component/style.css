@@ -1,0 +1,122 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #e8ecff;
+  background-size: cover;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: white;
+}
+
+.container .card {
+  max-width: 400px;
+}
+
+.container .head .img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.container .body h2 {
+  color: #464646;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.container .body .text {
+  color: #7280a7;
+  padding-top: 1rem;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.container .body .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: #f5f7ff;
+}
+
+.container .body .payment .annual p {
+  color: #7280a7;
+}
+
+.container .body .payment .link {
+  text-decoration: underline;
+  color: #3829e0;
+  cursor: pointer;
+}
+
+.container .body .payment .link:hover {
+  color: rgba(56, 41, 224, 0.748);
+}
+
+.container .body .btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.container .body .proceed {
+  background-color: #3829e0;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  color: white;
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0.1rem 1rem #3829e0;
+          box-shadow: 0 0.1rem 1rem #3829e0;
+}
+
+.container .body .proceed:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  background-color: rgba(56, 41, 224, 0.878);
+}
+
+.container .body .proceed:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.container .body .cancel {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #7280a7;
+}
+
+.container .body .cancel:hover {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
