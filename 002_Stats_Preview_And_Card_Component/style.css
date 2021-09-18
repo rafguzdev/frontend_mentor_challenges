@@ -1,0 +1,97 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 375px;
+}
+
+.container .header {
+  width: 100%;
+  position: relative;
+}
+
+.container .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(170, 92, 219, 0.5);
+  z-index: 999;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container .header img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.container .body {
+  background-color: #1b1938;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .body h1 {
+  text-align: center;
+  margin: 0 1.5rem;
+  padding-top: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.container .body h1 span {
+  color: #aa5cdb;
+}
+
+.container .body .text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  padding-top: 1rem;
+  margin: 0 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container .body .stats {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container .body .stats .stat {
+  margin-top: 1.5rem;
+}
+
+.container .body .stats .stat h2 {
+  font-size: 1.5rem;
+}
+
+.container .body .stats .stat p {
+  margin-top: 6px;
+  font-size: 0.6rem;
+}
+/*# sourceMappingURL=style.css.map */

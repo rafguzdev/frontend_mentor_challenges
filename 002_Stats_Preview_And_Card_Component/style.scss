@@ -1,0 +1,103 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+
+    max-width: 375px;
+
+    .header {
+        width: 100%;
+        position: relative;
+
+        &::before {
+            content:"";
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background: rgba(170, 92, 219, 0.5);
+            z-index:999;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .body {
+
+        background-color: hsl(244, 38%, 16%);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        h1 {
+            text-align: center;
+            margin: 0 1.5rem;
+            padding-top: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+
+            span {
+                color: hsl(277, 64%, 61%);
+            }
+        }
+
+        .text {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            line-height: 1.8;
+            padding-top: 1rem;
+            margin: 0 1.5rem;
+            text-align: center;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+
+        .stats {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            font-family: 'Lexend Deca', sans-serif;
+
+            .stat {
+                margin-top: 1.5rem;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    margin-top: 6px;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1000px) {
+//     .container {
+//       display: flex;
+//       img {
+//           height: 300px;
+//       }
+//     }
+// }
