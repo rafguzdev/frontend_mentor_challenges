@@ -94,4 +94,40 @@ body {
   margin-top: 6px;
   font-size: 0.6rem;
 }
+
+@media screen and (min-width: 900px) {
+  body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container {
+    max-width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .header {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .container .body {
+    padding: 0 2rem;
+  }
+  .container .body h1 {
+    margin: 0;
+  }
+  .container .body .text {
+    margin: 0;
+  }
+  .container .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -93,11 +93,38 @@ body {
     }
 }
 
-// @media screen and (min-width: 1000px) {
-//     .container {
-//       display: flex;
-//       img {
-//           height: 300px;
-//       }
-//     }
-// }
+@media screen and (min-width: 900px) {
+
+    body {
+
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+
+        max-width: 800px;
+        display: flex;
+
+        .header {
+            order: 1;
+        }
+
+        .body {
+
+            padding: 0 2rem;
+            h1 {
+                margin: 0;
+            }
+            .text {
+                margin: 0;
+            }
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+}
