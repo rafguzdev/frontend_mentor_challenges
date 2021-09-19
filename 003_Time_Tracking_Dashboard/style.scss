@@ -1,0 +1,141 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.container {
+    max-width: 325px;
+
+    .user {
+        margin-top: 3rem;
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 10px;
+
+        .head {
+            background-color: hsl(246, 80%, 60%);
+            display: flex;
+            border-radius: 10px;
+
+            img {
+                width: 20%;
+                border: 3px solid white;
+                border-radius: 200px;
+                margin: 1.5rem;
+            }
+
+            .text {
+
+                margin-top: auto;
+                margin-bottom: auto;
+
+                p {
+                    color: hsl(236, 100%, 87%);
+                }
+
+                h1 {
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .body {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+
+            p {
+                color: hsl(236, 100%, 87%);
+            }
+
+            p:first-child {
+                color: white;
+            }
+ 
+        }
+    }
+
+    .stats {
+        padding-bottom: 3rem;
+
+        .work { background-color: hsl(15, 100%, 70%); }
+        .play { background-color: hsl(195, 74%, 62%); }
+        .study { background-color: hsl(348, 100%, 68%); }
+        .exercise { background-color: hsl(145, 58%, 55%); }
+        .social { background-color: hsl(264, 64%, 52%); }
+        .selfcare { background-color: hsl(43, 84%, 65%); }
+    }
+
+    .card {
+        margin-top: 1.2rem;
+        position: relative;
+        
+        .img {
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+                position: absolute;
+                top: -10px;
+                right: 10px;
+            }
+        }
+
+        .stat {
+            background-color: hsl(235, 46%, 20%);
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            
+            .summary {
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+                padding-right: 1.5rem;
+                color: hsl(236, 100%, 87%);
+                margin-top: auto;
+                margin-left: auto;
+                font-size: 14px;
+            }
+
+            .duration {
+                margin-top: 0.5rem;
+                font-size: 25px;
+                font-weight: 300;
+            }
+
+            .pair {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 1.5rem;
+            }
+
+        }
+
+        .board {
+            background-color: hsl(235, 46%, 20%);
+            border-radius: 10px;
+        }
+
+        .dots {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+
+}

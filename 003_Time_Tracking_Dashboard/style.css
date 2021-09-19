@@ -1,0 +1,167 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  color: white;
+}
+
+.container {
+  max-width: 325px;
+}
+
+.container .user {
+  margin-top: 3rem;
+  background-color: #1c1f4a;
+  border-radius: 10px;
+}
+
+.container .user .head {
+  background-color: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+
+.container .user .head img {
+  width: 20%;
+  border: 3px solid white;
+  border-radius: 200px;
+  margin: 1.5rem;
+}
+
+.container .user .head .text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.container .user .head .text p {
+  color: #bdc1ff;
+}
+
+.container .user .head .text h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.container .user .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.container .user .body p {
+  color: #bdc1ff;
+}
+
+.container .user .body p:first-child {
+  color: white;
+}
+
+.container .stats {
+  padding-bottom: 3rem;
+}
+
+.container .stats .work {
+  background-color: #ff8c66;
+}
+
+.container .stats .play {
+  background-color: #56c2e6;
+}
+
+.container .stats .study {
+  background-color: #ff5c7c;
+}
+
+.container .stats .exercise {
+  background-color: #4acf81;
+}
+
+.container .stats .social {
+  background-color: #7536d3;
+}
+
+.container .stats .selfcare {
+  background-color: #f1c65b;
+}
+
+.container .card {
+  margin-top: 1.2rem;
+  position: relative;
+}
+
+.container .card .img {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .card .img img {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+
+.container .card .stat {
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .card .stat .summary {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-right: 1.5rem;
+  color: #bdc1ff;
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.container .card .stat .duration {
+  margin-top: 0.5rem;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.container .card .stat .pair {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1.5rem;
+}
+
+.container .card .board {
+  background-color: #1c1f4a;
+  border-radius: 10px;
+}
+
+.container .card .dots {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
