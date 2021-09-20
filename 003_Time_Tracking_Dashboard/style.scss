@@ -14,12 +14,13 @@ body {
 }
 
 .container {
-    max-width: 325px;
 
     .user {
+
         margin-top: 3rem;
         background-color: hsl(235, 46%, 20%);
         border-radius: 10px;
+
 
         .head {
             background-color: hsl(246, 80%, 60%);
@@ -27,7 +28,8 @@ body {
             border-radius: 10px;
 
             img {
-                width: 20%;
+                // width: 18rem;
+                width: 100px;
                 border: 3px solid white;
                 border-radius: 200px;
                 margin: 1.5rem;
@@ -37,6 +39,7 @@ body {
 
                 margin-top: auto;
                 margin-bottom: auto;
+                padding-right: 3rem;
 
                 p {
                     color: hsl(236, 100%, 87%);
@@ -50,6 +53,7 @@ body {
         }
 
         .body {
+
             display: flex;
             justify-content: space-between;
             padding: 1.5rem 2rem;
@@ -66,6 +70,7 @@ body {
     }
 
     .stats {
+
         padding-bottom: 3rem;
 
         .work { background-color: hsl(15, 100%, 70%); }
@@ -76,66 +81,6 @@ body {
         .selfcare { background-color: hsl(43, 84%, 65%); }
     }
 
-    .card {
-        margin-top: 1.2rem;
-        position: relative;
-        
-        .img {
-            height: 150px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
 
-            img {
-                position: absolute;
-                top: -10px;
-                right: 10px;
-            }
-        }
-
-        .stat {
-            background-color: hsl(235, 46%, 20%);
-            border-radius: 10px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            
-            .summary {
-                padding-top: 4rem;
-                padding-bottom: 2rem;
-                padding-right: 1.5rem;
-                color: hsl(236, 100%, 87%);
-                margin-top: auto;
-                margin-left: auto;
-                font-size: 14px;
-            }
-
-            .duration {
-                margin-top: 0.5rem;
-                font-size: 25px;
-                font-weight: 300;
-            }
-
-            .pair {
-                margin-top: auto;
-                margin-bottom: auto;
-                margin-left: 1.5rem;
-            }
-
-        }
-
-        .board {
-            background-color: hsl(235, 46%, 20%);
-            border-radius: 10px;
-        }
-
-        .dots {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-        }
-    }
 
 }

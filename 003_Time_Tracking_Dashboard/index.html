@@ -11,101 +11,38 @@
     <title>Time Tracking Dashboard</title>
 </head>
 <body>
-    <main class="container">
-        <div class="user">
-            <div class="head">
-                <img src="img/image-jeremy.png" alt="person">
-                <div class="text">
+    <div class="container">
+
+        <!-- menu card -->
+        <div class="menu-card">
+            <div class="card-report">
+                <img src="img/image-jeremy.png" alt="jeremy">
+                <div class="report">
                     <p>Report for</p>
-                    <h1>Jeremy Robson</h1>
+                    <div class="name">Jeremy Robson</div>
                 </div>
             </div>
-            <div class="body">
-                <p>Daily</p>
-                <p>Weekly</p>
-                <p>Menthly</p>
+            <div class="card-menu">
+                <p class="menu-link">Daily</p>
+                <p class="menu-link menu-active">Weekly</p>
+                <p class="menu-link">Monthly</p>
             </div>
         </div>
-        <div class="stats">
-            <div class="card">
-                <div class="img work">
-                    <img src="img/icon-work.svg" alt="work">
+
+        <!-- regular card -->
+        <div class="regular-card">
+            <div class="property-card">
+                <div class="row-1">
+                    <div class="title">Work</div>
+                    <img src="img/icon-ellipsis.svg" alt="">
                 </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Work</p>
-                        <p class="duration">32hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 36hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
-                </div>
-            </div>
-            <div class="card">
-                <div class="img play">
-                    <img src="img/icon-play.svg" alt="play">
-                </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Play</p>
-                        <p class="duration">10hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 7hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
-                </div>
-            </div>
-            <div class="card">
-                <div class="img study">
-                    <img src="img/icon-study.svg" alt="study">
-                </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Study</p>
-                        <p class="duration">4hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 7hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
-                </div>
-            </div>
-            <div class="card">
-                <div class="img exercise">
-                    <img src="img/icon-exercise.svg" alt="exercise">
-                </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Exercise</p>
-                        <p class="duration">4hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 5hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
-                </div>
-            </div>
-            <div class="card">
-                <div class="img social">
-                    <img src="img/icon-social.svg" alt="social">
-                </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Social</p>
-                        <p class="duration">5hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 10hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
-                </div>
-            </div>
-            <div class="card">
-                <div class="img selfcare">
-                    <img src="img/icon-self-care.svg" alt="selfcare">
-                </div>
-                <div class="stat">
-                    <div class="pair">
-                        <p class="type">Self Care</p>
-                        <p class="duration">2hrs</p>
-                    </div>
-                    <p class="summary">Last Week - 2hrs</p>
-                    <img src="img/icon-ellipsis.svg" alt="ellipsis" class="dots">
+                <div class="row-2">
+                    <div class="hours">32hrs</div>
+                    <div class="description">Last Week - 36hrs</div>
                 </div>
             </div>
         </div>
-    </main>
+       
+    </div>
 </body>
 </html>
