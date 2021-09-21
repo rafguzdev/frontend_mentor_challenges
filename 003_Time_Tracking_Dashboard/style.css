@@ -12,90 +12,247 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   font-family: 'Rubik', sans-serif;
   background-color: #0f1424;
   color: white;
 }
 
-.container .user {
-  margin-top: 3rem;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  width: 90%;
+}
+
+.container .menu-card {
   background-color: #1c1f4a;
   border-radius: 10px;
 }
 
-.container .user .head {
-  background-color: #5847eb;
+.container .menu-card .card-report {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #6f76c8;
   border-radius: 10px;
 }
 
-.container .user .head img {
-  width: 100px;
+.container .menu-card .card-report img {
+  width: 4.5rem;
   border: 3px solid white;
-  border-radius: 200px;
-  margin: 1.5rem;
+  border-radius: 100px;
+  margin: 2rem;
 }
 
-.container .user .head .text {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-right: 3rem;
+.container .menu-card .card-report .report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
 }
 
-.container .user .head .text p {
+.container .menu-card .card-report .report p {
   color: #bdc1ff;
 }
 
-.container .user .head .text h1 {
-  font-weight: 300;
-  font-size: 1.5rem;
+.container .menu-card .card-report .report .name {
+  font-size: 1.4rem;
 }
 
-.container .user .body {
+.container .menu-card .card-menu {
+  padding: 1.5rem 2rem;
+  color: #bdc1ff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .menu-card .card-menu .menu-link {
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.container .menu-card .card-menu .menu-link:hover {
+  color: white;
+}
+
+.container .menu-card .card-menu .menu-active {
+  color: white;
+}
+
+.container .color-work {
+  background-color: #ff8c66;
+  background-image: url("img/icon-work.svg");
+}
+
+.container .color-play {
+  background-color: #56c2e6;
+  background-image: url("img/icon-play.svg");
+}
+
+.container .color-study {
+  background-color: #ff5c7c;
+  background-image: url("img/icon-study.svg");
+}
+
+.container .color-exercise {
+  background-color: #4acf81;
+  background-image: url("img/icon-exercise.svg");
+}
+
+.container .color-social {
+  background-color: #7536d3;
+  background-image: url("img/icon-social.svg");
+}
+
+.container .color-seflcare {
+  background-color: #f1c65b;
+  background-image: url("img/icon-self-care.svg");
+}
+
+.container .regular-card {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 10px 10px 20px 20px;
+}
+
+.container .regular-card .property-card {
+  margin-top: 3.5rem;
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.container .regular-card .property-card:hover {
+  background-color: #3c3f7a;
+}
+
+.container .regular-card .property-card .row-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: 2rem;
 }
 
-.container .user .body p {
+.container .regular-card .property-card .row-1 img {
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .regular-card .property-card .row-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1.3rem;
+}
+
+.container .regular-card .property-card .row-2 .hours {
+  font-size: 2.3rem;
+}
+
+.container .regular-card .property-card .row-2 .description {
+  font-size: 0.8rem;
   color: #bdc1ff;
 }
 
-.container .user .body p:first-child {
-  color: white;
+@media screen and (min-width: 700px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .menu-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container .regular-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 40%;
+  }
 }
 
-.container .stats {
-  padding-bottom: 3rem;
+@media screen and (min-width: 1000px) {
+  .container .regular-card {
+    width: 30%;
+  }
 }
 
-.container .stats .work {
-  background-color: #ff8c66;
-}
-
-.container .stats .play {
-  background-color: #56c2e6;
-}
-
-.container .stats .study {
-  background-color: #ff5c7c;
-}
-
-.container .stats .exercise {
-  background-color: #4acf81;
-}
-
-.container .stats .social {
-  background-color: #7536d3;
-}
-
-.container .stats .selfcare {
-  background-color: #f1c65b;
+@media screen and (min-width: 1400px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 20vh;
+    max-height: 60vh;
+  }
+  .container .card-report {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .card-report .report {
+    margin: 0rem 2rem;
+    padding-bottom: 5rem;
+  }
+  .container .card-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .container .menu-card {
+    height: 100%;
+    max-width: 23%;
+  }
+  .container .regular-card {
+    max-width: 23%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
