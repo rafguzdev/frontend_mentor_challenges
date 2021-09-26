@@ -1,0 +1,77 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 88%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.container .head .title .followers {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #aeb1c9;
+  margin-top: 2px;
+}
+
+.container .head .line {
+  height: 1px;
+  display: block;
+  border: 0;
+  border-top: 1px solid #aeb1c9;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.container .head .theme-mode {
+  margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .head .theme-mode .name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #aeb1c9;
+}
+
+.container .head .theme-mode .toggle .toggle-background {
+  position: relative;
+  background-color: #aeb1c9;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.container .head .theme-mode .toggle .toggle-background .toggle-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+
+.container {
+    width: 88%;
+    margin: auto;
+    margin-top: 3rem;
+
+    // top
+    .head {
+        .title {
+            .followers {
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: $color-gray;
+                margin-top: 2px;
+            }
+        }
+
+        .line {
+            height: 1px;
+            display: block;
+            border: 0; 
+            border-top: 1px solid $color-gray;
+            margin-top: 2rem;
+            margin-bottom: 1rem; 
+            padding: 0;
+        }
+
+        .theme-mode {
+            margin-top: 2px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .name {
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: $color-gray;
+            }
+
+            .toggle {
+                .toggle-background {
+                    position: relative;
+                    background-color: $color-gray;
+                    width: 40px;
+                    height: 20px;
+                    border-radius: 20px;
+
+                    .toggle-circle {
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 100px;
+                        position: absolute;
+                        top: 50%;
+                        right: 2px;
+                        transform: translate(0, -50%);
+                        background-color: white;
+    
+                    }
+                }
+            }
+        }
+    }
+}
