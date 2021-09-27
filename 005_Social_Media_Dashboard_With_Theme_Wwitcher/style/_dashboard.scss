@@ -1,7 +1,7 @@
 
 .container {
-    width: 88%;
-    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 3rem;
 
     // top
@@ -40,7 +40,7 @@
             .toggle {
                 .toggle-background {
                     position: relative;
-                    background-color: $color-gray;
+                    background-color: $color-toggle-light;
                     width: 40px;
                     height: 20px;
                     border-radius: 20px;
@@ -58,6 +58,57 @@
                     }
                 }
             }
+        }
+    }
+
+    // main cards
+    .main-cards {
+        margin-top: 4rem;
+
+        .facebook {
+            border-top: 5px solid $color-facebook;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .instagram {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top:5px solid transparent;
+            background:linear-gradient(45deg,$color-instagram1,$color-instagram2) border-box;        
+        }
+
+        .main-card {
+            width: 100%;
+            margin-top: 2rem;
+            background-color: $color-light-grayish-blue;
+            border-radius: 5px;
+            text-align: center;
+
+            .social {
+                margin-top: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                .user {
+                    color: $color-gray;
+                    font-weight: 700;
+                }
+            }
+
+            .followers {
+                margin-top: 1.5rem;
+
+                .followers-number {
+                    font-size: 5rem;
+                    font-weight: 700;
+                    color: $very-dark-blue;
+                }
+            }
+
+
         }
     }
 }

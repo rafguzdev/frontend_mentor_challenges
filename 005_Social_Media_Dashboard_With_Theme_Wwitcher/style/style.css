@@ -14,15 +14,15 @@ body {
 }
 
 .container {
-  width: 88%;
-  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 3rem;
 }
 
 .container .head .title .followers {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #aeb1c9;
+  color: #797a81;
   margin-top: 2px;
 }
 
@@ -30,7 +30,7 @@ body {
   height: 1px;
   display: block;
   border: 0;
-  border-top: 1px solid #aeb1c9;
+  border-top: 1px solid #797a81;
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding: 0;
@@ -52,12 +52,12 @@ body {
 .container .head .theme-mode .name {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #aeb1c9;
+  color: #797a81;
 }
 
 .container .head .theme-mode .toggle .toggle-background {
   position: relative;
-  background-color: #aeb1c9;
+  background-color: #aeb3cb;
   width: 40px;
   height: 20px;
   border-radius: 20px;
@@ -73,5 +73,59 @@ body {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   background-color: white;
+}
+
+.container .main-cards {
+  margin-top: 4rem;
+}
+
+.container .main-cards .facebook {
+  border-top: 5px solid #198ff5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.container .main-cards .instagram {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 5px solid transparent;
+  background: linear-gradient(45deg, #fdc468, #df4996) border-box;
+}
+
+.container .main-cards .main-card {
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .main-cards .main-card .social {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.container .main-cards .main-card .social .user {
+  color: #797a81;
+  font-weight: 700;
+}
+
+.container .main-cards .main-card .followers {
+  margin-top: 1.5rem;
+}
+
+.container .main-cards .main-card .followers .followers-number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #1e202a;
 }
 /*# sourceMappingURL=style.css.map */
