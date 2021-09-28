@@ -64,6 +64,7 @@
     // main cards
     .main-cards {
         margin-top: 4rem;
+        margin-bottom: 4rem;
 
         .facebook {
             border-top: 5px solid $color-facebook;
@@ -76,6 +77,12 @@
             border-top-right-radius: 5px;
             border-top:5px solid transparent;
             background:linear-gradient(45deg,$color-instagram1,$color-instagram2) border-box;        
+        }
+
+        .youtube {
+            border-top: 5px solid $color-youtube;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
 
         .main-card {
@@ -95,6 +102,7 @@
                 .user {
                     color: $color-gray;
                     font-weight: 700;
+                    font-size: 1.2rem;
                 }
             }
 
@@ -106,9 +114,146 @@
                     font-weight: 700;
                     color: $very-dark-blue;
                 }
+
+                .followers-text {
+                    text-transform: uppercase;
+                    letter-spacing: 0.5rem;
+                    color: $color-gray;
+                    font-size: 1.2rem;
+                }
             }
 
+            .status {
+                display: flex;
+                margin-top: 2rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                padding-bottom: 2rem;
 
+                .text {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+
+                .text-red {
+                    color: $color-bright-red;
+                }
+
+                .text-green {
+                    color: $color-lime-green;
+                }
+            }
+        }
+    }
+
+    .overview {
+        color: $color-gray;
+        margin-bottom: 3rem;
+    }
+
+    .overview-cards {
+        margin-bottom: 3rem;
+
+        .overview-card {
+            margin-top: 2rem;
+            background-color: $color-light-grayish-blue;
+            border-radius: 5px;
+
+            .line-1 {
+                margin-left: 3rem;
+                margin-right: 3rem;
+                padding-top: 2.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    color: $color-gray;
+                }
+            }
+
+            .line-2 {
+                margin-left: 3rem;
+                margin-right: 3rem;
+                padding-top: 2.8rem;
+                padding-bottom: 1.4rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-weight: 700;
+                    font-size: 3.3rem;
+                }
+
+                .status {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.3rem;
+
+                    .text {
+                        font-size: 1.2rem;
+                    }
+
+                    .text-red {
+                        color: $color-bright-red;
+                    }
+    
+                    .text-green {
+                        color: $color-lime-green;
+                    }
+                    
+                }
+            }
         }
     }
 }
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        .main-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .main-card {
+                flex-grow: 1;
+                flex-basis: 33%;
+            }
+        }
+
+        .overview-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .overview-card {
+                flex-grow: 1;
+                flex-basis: 33%;
+            }
+            
+        }
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+
+    .container {
+        .main-cards {
+            .main-card {
+                flex-basis: 22%;
+            }
+        }
+
+        .overview-cards {
+            .overview-card {
+                flex-basis: 22%;
+            }    
+        }
+    }
+  }

@@ -77,6 +77,7 @@ body {
 
 .container .main-cards {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .container .main-cards .facebook {
@@ -90,6 +91,12 @@ body {
   border-top-right-radius: 5px;
   border-top: 5px solid transparent;
   background: linear-gradient(45deg, #fdc468, #df4996) border-box;
+}
+
+.container .main-cards .youtube {
+  border-top: 5px solid #c4032a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .container .main-cards .main-card {
@@ -117,6 +124,7 @@ body {
 .container .main-cards .main-card .social .user {
   color: #797a81;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .container .main-cards .main-card .followers {
@@ -127,5 +135,166 @@ body {
   font-size: 5rem;
   font-weight: 700;
   color: #1e202a;
+}
+
+.container .main-cards .main-card .followers .followers-text {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #797a81;
+  font-size: 1.2rem;
+}
+
+.container .main-cards .main-card .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.container .main-cards .main-card .status .text {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.container .main-cards .main-card .status .text-red {
+  color: #dc414c;
+}
+
+.container .main-cards .main-card .status .text-green {
+  color: #1db489;
+}
+
+.container .overview {
+  color: #797a81;
+  margin-bottom: 3rem;
+}
+
+.container .overview-cards {
+  margin-bottom: 3rem;
+}
+
+.container .overview-cards .overview-card {
+  margin-top: 2rem;
+  background-color: #f0f2fa;
+  border-radius: 5px;
+}
+
+.container .overview-cards .overview-card .line-1 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .overview-cards .overview-card .line-1 p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #797a81;
+}
+
+.container .overview-cards .overview-card .line-2 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 2.8rem;
+  padding-bottom: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .overview-cards .overview-card .line-2 p {
+  font-weight: 700;
+  font-size: 3.3rem;
+}
+
+.container .overview-cards .overview-card .line-2 .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3rem;
+}
+
+.container .overview-cards .overview-card .line-2 .status .text {
+  font-size: 1.2rem;
+}
+
+.container .overview-cards .overview-card .line-2 .status .text-red {
+  color: #dc414c;
+}
+
+.container .overview-cards .overview-card .line-2 .status .text-green {
+  color: #1db489;
+}
+
+@media screen and (min-width: 600px) {
+  .container .main-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .container .main-cards .main-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .container .overview-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .container .overview-cards .overview-card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container .main-cards .main-card {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
+  .container .overview-cards .overview-card {
+    -ms-flex-preferred-size: 22%;
+        flex-basis: 22%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
