@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: url('img/bg-mobile.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: hsl(229, 57%, 11%);
     height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
@@ -144,14 +142,6 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-
-    body {
-        background-color: hsl(229, 57%, 11%);
-        background-image: url('img/bg-desktop.png');
-        background-position-y: bottom;
-        background-size: unset;
-        
-    }
 
     .container {
         flex-direction: row;
