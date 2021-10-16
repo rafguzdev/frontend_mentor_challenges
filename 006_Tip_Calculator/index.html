@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
     <title>Tip Calculator</title>
 </head>
 <body>
@@ -14,16 +17,48 @@
         </div>
         <div class="card">
             <div class="input">
-                <div class="bill-label">
-                    <label for="inp-bill">bill</label>
+                <div class="bill-container">
+                    <p class="label">Bill</p>
+                    <div class="bill-input">
+                        <input type="text" class="input-bill">
+                        <img src="img/icon-dollar.svg" alt="">
+                    </div>
                 </div>
-                <div class="bill-input">
-                    <input type="text" name="inp-bill" id="">
-                    <img src="img/icon-dollar.svg" alt="">
+                <div class="tip-container">
+                    <p class="label">Select Tip %</p>
+                    <div class="buttons">
+                        <div class="button">5%</div>
+                        <div class="button active">10%</div>
+                        <div class="button">15%</div>
+                        <div class="button">25%</div>
+                        <div class="button">50%</div>
+                        <div class="button custom">Custom</div>
+                    </div>
+                </div>
+                <div class="people-container">
+                    <p class="label">Number of People</p>
+                    <div class="people-input">
+                        <input type="text" class="input-bill">
+                        <img src="img/icon-person.svg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="output">
-
+                <div class="row">
+                    <div class="text">
+                        <h5>Tip Amount</h5>
+                        <p>/ person</p>
+                    </div>
+                    <div class="value">$4.27</div>
+                </div>
+                <div class="row">
+                    <div class="text">
+                        <h5>Total</h5>
+                        <p>/ person</p>
+                    </div>
+                    <div class="value">$32.79</div>
+                </div>
+                <div class="button">reset</div>
             </div>
         </div>
     </div>

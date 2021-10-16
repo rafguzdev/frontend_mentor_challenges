@@ -1,0 +1,14 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: $color-light-grayish-cyan1;
+}

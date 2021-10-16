@@ -1,0 +1,221 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        margin: 2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-white;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: 2rem;
+
+        .input {
+
+            .label {
+                font-weight: bold;
+                color: $color-dark-grayish-cyan1;
+                margin-bottom: 0.5rem;
+            }
+
+            .bill-container {
+
+                .bill-input {
+                    position: relative;
+
+                    input {
+                        background-color: $color-light-grayish-cyan2;
+                        color: $color-very-dark-cyan;
+                        font-family: 'Space Mono', monospace;
+                        width: 100%;
+                        border: none;
+                        border-radius: 0.5rem;
+                        text-align: right;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        padding: 0.3rem 1rem;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 1rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 0.8rem;
+                    }
+                }
+            }
+
+            .tip-container {
+                margin-top: 2rem;
+
+                .buttons {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+
+                    .button {
+                        background-color: $color-very-dark-cyan;
+                        color: $color-white;
+                        font-weight: bold;
+                        border-radius: 0.5rem;
+                        text-align: center;
+                        padding: 0.5rem 0;
+                        font-size: 1.3rem;
+
+                        &:hover {
+                            background-color: $color-strong-cyan;
+                            color: $color-very-dark-cyan;
+                        }
+
+                        &:active {
+                            transform: scale(95%);
+                        }
+                    }
+                    .active {
+                        background-color: $color-strong-cyan;
+                        color: $color-very-dark-cyan;
+                    }
+
+                    .custom {
+                        background-color: $color-light-grayish-cyan2;
+                        color: $color-dark-grayish-cyan2;
+                    }
+                }
+            }
+
+            .people-container {
+                margin-top: 2rem;
+
+                .people-input {
+                    position: relative;
+
+                    input {
+                        background-color: $color-light-grayish-cyan2;
+                        color: $color-very-dark-cyan;
+                        font-family: 'Space Mono', monospace;
+                        width: 100%;
+                        border: none;
+                        border-radius: 0.5rem;
+                        text-align: right;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        padding: 0.3rem 1rem;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 1rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .output {
+            margin-top: 2rem;
+            background-color: $color-very-dark-cyan;
+            border-radius: 1rem;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+
+                .text {
+                    color: $color-white;
+
+                    p {
+                        color: $color-dark-grayish-cyan2;
+                        font-weight: bold;
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .value {
+                    color: $color-strong-cyan;
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+            }
+
+            .button {
+                color: $color-very-dark-cyan;
+                background-color: $color-strong-cyan;
+                margin: 1.3rem;
+                padding: 0.4rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2rem;
+
+                &:hover {
+                    transform: scale(98%);
+                }
+
+                &:active {
+                    transform: scale(97%);
+                }
+
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        .card {
+            .input {
+                .tip-container { 
+                    .buttons {
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container {
+        .card {
+            width: auto;
+            flex-direction: row;
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            // justify-content: space-around;
+            .input {
+                .tip-container { 
+                    .buttons {
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                }
+            }
+
+            .output {
+                margin-left: 2rem;
+                margin-top: 0;
+                min-width: 400px;
+
+                .button {
+                    margin-top: 8rem;
+                }
+            }
+        }
+    }
+}

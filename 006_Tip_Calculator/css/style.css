@@ -1,1 +1,240 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+head {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .logo {
+  margin: 2rem;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 2rem;
+}
+
+.container .card .input .label {
+  font-weight: bold;
+  color: #5e7a7d;
+  margin-bottom: 0.5rem;
+}
+
+.container .card .input .bill-container .bill-input {
+  position: relative;
+}
+
+.container .card .input .bill-container .bill-input input {
+  background-color: #f4fafa;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+}
+
+.container .card .input .bill-container .bill-input img {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0.8rem;
+}
+
+.container .card .input .tip-container {
+  margin-top: 2rem;
+}
+
+.container .card .input .tip-container .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.container .card .input .tip-container .buttons .button {
+  background-color: #00494d;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.container .card .input .tip-container .buttons .button:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container .card .input .tip-container .buttons .button:active {
+  -webkit-transform: scale(95%);
+          transform: scale(95%);
+}
+
+.container .card .input .tip-container .buttons .active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container .card .input .tip-container .buttons .custom {
+  background-color: #f4fafa;
+  color: #7f9c9f;
+}
+
+.container .card .input .people-container {
+  margin-top: 2rem;
+}
+
+.container .card .input .people-container .people-input {
+  position: relative;
+}
+
+.container .card .input .people-container .people-input input {
+  background-color: #f4fafa;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+}
+
+.container .card .input .people-container .people-input img {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0.8rem;
+}
+
+.container .card .output {
+  margin-top: 2rem;
+  background-color: #00494d;
+  border-radius: 1rem;
+}
+
+.container .card .output .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container .card .output .row .text {
+  color: white;
+}
+
+.container .card .output .row .text p {
+  color: #7f9c9f;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.container .card .output .row .value {
+  color: #26c0ab;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container .card .output .button {
+  color: #00494d;
+  background-color: #26c0ab;
+  margin: 1.3rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.container .card .output .button:hover {
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
+}
+
+.container .card .output .button:active {
+  -webkit-transform: scale(97%);
+          transform: scale(97%);
+}
+
+@media screen and (min-width: 600px) {
+  .container .card .input .tip-container .buttons {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container .card {
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .container .card .input .tip-container .buttons {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container .card .output {
+    margin-left: 2rem;
+    margin-top: 0;
+    min-width: 400px;
+  }
+  .container .card .output .button {
+    margin-top: 8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
