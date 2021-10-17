@@ -1,0 +1,170 @@
+.container {
+    .header {
+        position: relative;
+        background-image: linear-gradient(135deg, $color-very-light-red, $color-light-red);
+        border-bottom-left-radius: 3rem;
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3rem;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .hamburger:hover {
+                cursor: pointer;
+            }
+
+            .hamburger:active {
+                transform: scale(95%);
+            }
+        }
+
+        .intro {
+            padding-top: 3rem;
+            width: 90%;
+            margin: auto;
+            color: $color-white;
+            font-family: 'Overpass', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            font-family: 'Ubuntu', sans-serif;
+            padding-top: 3rem;
+            padding-bottom: 7rem;
+            gap: 1rem;
+
+            .button {
+                font-weight: bold;
+                padding: 0.8rem 1.0rem 0.8rem 1.0rem;
+                border-radius: 100px;
+                font-size: 1.0rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &:active {
+                    transform: scale(98%);
+                }
+            }
+
+            .start {
+                background-color: $color-white;
+                color: $color-light-red;
+            }
+
+            .learn {
+                color: $color-white;
+                border: 1px solid $color-white;
+            }
+        }
+
+        .nav-card {
+            position: absolute;
+            top: 8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            min-height: 300px; // tempolary
+            border-radius: 0.5rem;
+            background-color: $color-white;
+            transition: top 0.2s;
+            font-family: 'Overpass', sans-serif;
+
+            .link {
+                display: flex;
+                justify-content: center;
+                gap: 0.4rem;
+                margin-top: 2rem;
+                color: $color-very-dark-grayish-blue;
+                font-weight: bold;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                .img-rotate {
+                    transform: rotate(180deg);
+                }
+            }
+
+            hr {
+                width: 80%;
+                margin: auto;
+                margin-top: 2rem;
+                // color: $color-grayish-blue;
+                border: 1px solid $color-grayish-blue;
+            }
+
+            .login {
+                margin-top: 1rem;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2rem;
+                cursor: pointer;
+
+                &:active {
+                    transform: scale(95%) translateX(1px);
+                }
+
+            }
+
+            .signUp {
+                
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                padding: 1rem 1rem;
+                border-radius: 100px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: $color-white;
+                width: 150px;
+                background-image: linear-gradient(90deg, $color-very-light-red, $color-light-red);
+                cursor: pointer;
+
+                &:active {
+                    transform: scale(98%);
+                }
+            }
+
+            .sub-menu {
+                text-align: center;
+                background-color: $color-background;
+                margin: auto;
+                margin-top: 1rem;
+                width: 80%;
+                color: $color-very-dark-grayish-blue;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 1.6rem 0;
+
+                p {
+                    margin-top: 0.5rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $color-grayish-blue;
+                    }
+                    
+                }
+            }
+
+            .sub-menu-hide {
+                display: none;
+            }
+        }
+
+        .nav-card-off {
+            top: -22rem;
+        }
+
+
+    }
+}

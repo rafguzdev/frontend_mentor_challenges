@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+head {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f1f1;
+}
+
+.container .header {
+  position: relative;
+  background-image: linear-gradient(135deg, #ff8f70, #ff3d54);
+  border-bottom-left-radius: 3rem;
+}
+
+.container .header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container .header .nav .hamburger:hover {
+  cursor: pointer;
+}
+
+.container .header .nav .hamburger:active {
+  -webkit-transform: scale(95%);
+          transform: scale(95%);
+}
+
+.container .header .intro {
+  padding-top: 3rem;
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  gap: 1rem;
+}
+
+.container .header .buttons .button {
+  font-weight: bold;
+  padding: 0.8rem 1.0rem 0.8rem 1.0rem;
+  border-radius: 100px;
+  font-size: 1.0rem;
+}
+
+.container .header .buttons .button:hover {
+  cursor: pointer;
+}
+
+.container .header .buttons .button:active {
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
+}
+
+.container .header .buttons .start {
+  background-color: white;
+  color: #ff3d54;
+}
+
+.container .header .buttons .learn {
+  color: white;
+  border: 1px solid white;
+}
+
+.container .header .nav-card {
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 85%;
+  min-height: 300px;
+  border-radius: 0.5rem;
+  background-color: white;
+  -webkit-transition: top 0.2s;
+  transition: top 0.2s;
+  font-family: 'Overpass', sans-serif;
+}
+
+.container .header .nav-card .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.4rem;
+  margin-top: 2rem;
+  color: #4b5862;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container .header .nav-card .link .img-rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .header .nav-card hr {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  border: 1px solid #c8c8cb;
+}
+
+.container .header .nav-card .login {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container .header .nav-card .login:active {
+  -webkit-transform: scale(95%) translateX(1px);
+          transform: scale(95%) translateX(1px);
+}
+
+.container .header .nav-card .signUp {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  width: 150px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(90deg, #ff8f70, #ff3d54);
+  cursor: pointer;
+}
+
+.container .header .nav-card .signUp:active {
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
+}
+
+.container .header .nav-card .sub-menu {
+  text-align: center;
+  background-color: #f4f1f1;
+  margin: auto;
+  margin-top: 1rem;
+  width: 80%;
+  color: #4b5862;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1.6rem 0;
+}
+
+.container .header .nav-card .sub-menu p {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.container .header .nav-card .sub-menu p:hover {
+  color: #c8c8cb;
+}
+
+.container .header .nav-card .sub-menu-hide {
+  display: none;
+}
+
+.container .header .nav-card-off {
+  top: -22rem;
+}
+
+.container .content .section-1 {
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.container .content .section-1 h1 {
+  font-size: 1.3rem;
+}
+
+.container .content .section-1 .container img {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container .content .section-1 .container .text {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.container .content .section-1 .container .text h2 {
+  color: #1f3f5b;
+  width: 80%;
+  margin: auto;
+}
+
+.container .content .section-1 .container .text p {
+  color: #4b5862;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+.container .content .section-2 {
+  margin-top: 13rem;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3c3e5d;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container .content .section-2 img {
+  display: block;
+  margin-top: -10rem;
+}
+
+.container .content .section-2 .text {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+
+.container .content .section-2 .text h2 {
+  font-weight: 400;
+  color: white;
+}
+
+.container .content .section-2 .text p {
+  margin-top: 1rem;
+  color: #c8c8cb;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+.container .content .section-3 {
+  font-family: 'Overpass', sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container .content .section-3 img {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container .content .section-3 .text {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.container .content .section-3 .text h2 {
+  color: #1f3f5b;
+  width: 80%;
+  margin: auto;
+}
+
+.container .content .section-3 .text p {
+  color: #4b5862;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+.container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  border-top-right-radius: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: 0.7rem;
+  background-color: #25252d;
+  color: #c8c8cb;
+  text-align: center;
+}
+
+.container .footer p {
+  color: white;
+  font-weight: bold;
+}
+
+.container .footer ul {
+  margin-top: 1rem;
+}
+
+.container .footer ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.container .footer ul li:hover {
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

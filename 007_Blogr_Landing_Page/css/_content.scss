@@ -1,0 +1,113 @@
+.container {
+    .content {
+        .section-1 {
+            font-family: 'Overpass', sans-serif;
+            text-align: center;
+            margin-top: 4rem;
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            .container {
+
+                img {
+                    display: block;
+                    margin-top: 2rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+
+                .text {
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 3rem;
+
+                    h2 {
+                        color: $color-very-dark-blue;
+                        width: 80%;
+                        margin: auto;
+                    }
+
+                    p {
+                        color: $color-very-dark-grayish-blue;
+                        margin-top: 1rem;
+                        font-size: 0.8rem;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+
+        .section-2 {
+            margin-top: 13rem;
+            border-top-right-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            display: flex;
+            flex-direction: column;
+            background-color: $color-phone-background;
+            font-family: 'Ubuntu', sans-serif;
+
+            img {
+                display: block;
+                margin-top: -10rem;
+            }
+
+            .text {
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                padding-bottom: 5rem;
+
+                h2 {
+                    font-weight: 400;
+                    color: $color-white;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    color: $color-grayish-blue;
+                    font-size: 0.8rem;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .section-3 {
+            font-family: 'Overpass', sans-serif;
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+
+            img {
+                display: block;
+                margin-top: 2rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .text {
+                width: 90%;
+                margin: auto;
+                margin-top: 3rem;
+
+                h2 {
+                    color: $color-very-dark-blue;
+                    width: 80%;
+                    margin: auto;
+                }
+
+                p {
+                    color: $color-very-dark-grayish-blue;
+                    margin-top: 1rem;
+                    font-size: 0.8rem;
+                    line-height: 22px;
+                }
+            }
+        }
+
+    }
+}
