@@ -1,16 +1,12 @@
-const hamburger = document.querySelector("#hamburger");
+document.querySelector("#hamburger").addEventListener("click", openMenu, false );
 const navCard = document.querySelector("#nav-card");
-hamburger.addEventListener("click", openMenu, false );
 
-const subMenuProductAct = document.querySelector("#sub-menu-product-act");
 const subMenuProduct = document.querySelector("#sub-menu-product");
-const subMenuCompanyAct = document.querySelector("#sub-menu-company-act");
 const subMenuCompany = document.querySelector("#sub-menu-company");
-const subMenuConnectAct = document.querySelector("#sub-menu-connect-act");
 const subMenuConnect = document.querySelector("#sub-menu-connect");
-subMenuProductAct.addEventListener("click", openSubMenuProduct, false );
-subMenuCompanyAct.addEventListener("click", openSubMenuCompany, false );
-subMenuConnectAct.addEventListener("click", openSubMenuConnect, false );
+document.querySelector("#sub-menu-product-act").addEventListener("click", openSubMenuProduct, false );
+document.querySelector("#sub-menu-company-act").addEventListener("click", openSubMenuCompany, false );
+document.querySelector("#sub-menu-connect-act").addEventListener("click", openSubMenuConnect, false );
 
 function openMenu(){
     
@@ -20,6 +16,7 @@ function openMenu(){
     else {
         document.querySelector("#hamburger img").src = "img/icon-hamburger.svg";
     }
+
     navCard.classList.toggle('nav-card-off');
     subMenuProduct.classList.add('sub-menu-hide');
     subMenuCompany.classList.add('sub-menu-hide');
@@ -27,7 +24,6 @@ function openMenu(){
     document.querySelector("#img-connect").classList.remove('img-rotate');
     document.querySelector("#img-company").classList.remove('img-rotate');
     document.querySelector("#img-product").classList.remove('img-rotate');
-
 }
 
 function openSubMenuProduct() {
@@ -38,7 +34,6 @@ function openSubMenuProduct() {
     document.querySelector("#img-product").classList.toggle('img-rotate');
     document.querySelector("#img-company").classList.remove('img-rotate');
     document.querySelector("#img-connect").classList.remove('img-rotate');
-
 }
 
 function openSubMenuCompany() {

@@ -19,6 +19,10 @@
             .hamburger:active {
                 transform: scale(95%);
             }
+
+            .nav-desktop {
+                display: none;
+            }
         }
 
         .intro {
